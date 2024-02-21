@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acticity 3</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Output using innerHTML:</h1>
+        <p>Press the button to change content.</p>\
+        <p><b>The Content: </b><span id="demo">Content</span></p>
+        <br><br><br>
+        <button type="button" id="btn">Click Me!</button>
+    </div>
+        <script>
+            const Btn = document.getElementById("btn");
+
+            Btn.addEventListener("click", function() {
+                document.getElementById("demo").innerHTML = "The Content was changed";
+            });
+        </script>
+</body>
+</html>
